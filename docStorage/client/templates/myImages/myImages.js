@@ -1,7 +1,3 @@
-Images = new FS.Collection("images", {
-  stores: [new FS.Store.FileSystem("images", {path: "~/uploads"})]
-});
-
 
 Template.myImages.events({
   'change .myFileInput': function(event, template) {
