@@ -25,3 +25,6 @@ kadira:react-layout
 kadira:blaze-layout
 aldeed:autoform
 cfs:s3
+twbs:bootstrap
+iyyang:cfs-aliyun
+cfs:dropbox
