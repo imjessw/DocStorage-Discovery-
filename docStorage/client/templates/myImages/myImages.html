@@ -3,4 +3,9 @@
 		<h1>Images</h1>
 		<input type="file" class="myFileInput"/>	
 	</div>
+	<div>
+        {{#each files}}
+			<img src="{{theImageUrl}}"/>
+        {{/each}}
+	</div>
 </template>
