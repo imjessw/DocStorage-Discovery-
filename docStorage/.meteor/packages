@@ -23,3 +23,5 @@ cfs:gridfs
 cfs:filesystem
 kadira:react-layout
 kadira:blaze-layout
+aldeed:autoform
+cfs:s3
