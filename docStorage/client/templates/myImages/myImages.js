@@ -26,15 +26,5 @@ Template.myImages.events({
     }
 });
 
-Template.myImages.onCreated(function () {
-    //add your statement here
-});
 
-Template.myImages.onRendered(function () {
-    //add your statement here
-});
-
-Template.myImages.onDestroyed(function () {
-    //add your statement here
-});
 

@@ -28,3 +28,5 @@ cfs:s3
 twbs:bootstrap
 iyyang:cfs-aliyun
 cfs:dropbox
+aldeed:collection2
+cfs:ejson-file
