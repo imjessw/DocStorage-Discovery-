@@ -3,11 +3,11 @@ Template.myDocs.helpers({
     'files':function(){
         return Files.find({},{sort:{'uploadedAt':-1}}).fetch()
     },
-    'theImageUrl':function(){
+    'theFilesUrl':function(){
         return Files.findOne(this._id).url();
     },
-    'isImage':function(){
-        return Files.findOne(this._id).isImage()
+    'isfiles':function(){
+        return Files.findOne(this._id).isfiles()
     },
     'raw':function(){
         return EJSON.stringify(this,{'indent':true})
