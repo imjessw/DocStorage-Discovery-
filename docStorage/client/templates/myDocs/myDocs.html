@@ -2,5 +2,11 @@
 	<div>
 		<h1>My Docs</h1>
 		<input type="file" class="myFileInput"/>
+
+    <!-- This is the snippet which was missing to show your uploaded documents-->
+    {{#each files}}
+      <a href="{{theFileUrl}}">{{theFileUrl}}</a>
+    {{/each}}
+
 	</div>
 </template>

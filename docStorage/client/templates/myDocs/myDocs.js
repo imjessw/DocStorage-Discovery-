@@ -3,7 +3,8 @@ Template.myDocs.helpers({
     'files':function(){
         return Files.find({},{sort:{'uploadedAt':-1}}).fetch()
     },
-    'theImageUrl':function(){
+    //I renamed this to theFileUrl to prevent confusion
+    'theFileUrl':function(){
         return Files.findOne(this._id).url();
     },
     'isImage':function(){
