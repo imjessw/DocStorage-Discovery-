@@ -1,4 +1,6 @@
-Docs = new Mongo.Collection("docs");
+Docs = new FS.Collection("docs", {
+  stores: [new FS.Store.GridFS("docsStore")]
+});;
 Docs.attachSchema(new SimpleSchema({
   name: {
     type: String
@@ -15,8 +17,7 @@ Docs.attachSchema(new SimpleSchema({
 }));
 
 Files = new FS.Collection("files", {
-  stores: [new FS.Store.GridFS("filesStore", {path: "~/uploads"})]
-
+  stores: [new FS.Store.GridFS("filesStore")]
 });
 
 Files.allow({

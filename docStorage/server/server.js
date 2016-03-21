@@ -12,7 +12,7 @@ mySchema = new SimpleSchema({
     }
   }
 });
-Docs.attachSchema(mySchema);
+Files.attachSchema(mySchema);
 
 Meteor.methods({
   myServerMethod: function(doc) {
