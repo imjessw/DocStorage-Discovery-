@@ -15,7 +15,8 @@ Docs.attachSchema(new SimpleSchema({
 }));
 
 Files = new FS.Collection("files", {
-  stores: [new FS.Store.GridFS("filesStore")]
+  stores: [new FS.Store.GridFS("filesStore", {path: "~/uploads"})]
+
 });
 
 Files.allow({
